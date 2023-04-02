@@ -1,0 +1,540 @@
+body{
+    margin: 20px;
+    padding: 0;
+}
+main{
+    margin: 0 20px;
+    padding: 0;
+}
+.section-ttl{
+    width: 200px;
+    border-bottom: 3px solid #311ff7;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+/* ナビバー */
+.navbar{
+    text-align: right;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.reg-link{
+    text-decoration: none;
+    color: #6a6868;
+    margin-left: 10px;
+}
+
+/* トップページ */
+ul {
+    padding: 0;
+}
+.register{
+    font-size: 20px;
+    padding: 0 2px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.home-list li{
+    width: 90%;
+    color: #404040;
+    border-left: solid 6px #3d52f4;/*左側の線*/
+    border-bottom: solid 2px #dadada;/*下に灰色線*/
+    background: whitesmoke;
+    margin-bottom: 5px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px 0;
+    padding-left: 40px;
+}
+.home-list li:before {
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f138";/*アイコンの種類*/
+    position: absolute;
+    left : 3.3em;/*左端からのアイコンまでの距離*/
+    color: rgb(177, 179, 182);/*アイコン色*/
+}
+
+
+  /* 登録一覧ページ */
+.reg-list {
+    border: solid 2px #545455;
+    margin: 20px;
+    padding: 2em 1em 2em 2.3em;
+    width: 80%;
+    position: relative;
+} 
+
+.reg-list li {
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 1em 2rem;
+    list-style-type: none!important;/*ポチ消す*/
+}
+
+.reg-list li:before {
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f00c";
+    position: absolute;
+    left : 1em; /*左端からのアイコンまで*/
+    color: #3f55ff;
+}
+
+/* フォーム */
+.form-note{
+    font-size: 12px;
+    margin-left: 5px;
+    color: red;
+}
+#registerperson-btn{
+    display: none;
+}
+
+
+/* 販売書テーブル */
+.estimate-table,
+.estimatesearch-table{
+    width: 95%;
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.receive-table{
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.bill-table{
+    width: 40%;
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.receive-id,.receive-id,.bill-name{
+    width: 10%;
+}
+
+
+.estimate-table th:first-child,.estimatesearch-table th:first-child,.bill-table th:first-child{
+    border-radius: 5px 0 0 0;
+}
+
+
+.estimate-table th:last-child,
+.receive-table th:last-child,
+.bill-table th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+.estimate-table th,
+.receive-table th,
+.bill-table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1.5px solid #3c6690;
+    border-top: 1.5px solid #3c6690;
+    border-bottom: 1.5px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 10px 0;
+}
+
+.estimate-table td,
+.receive-table td,
+.bill-table td{
+    text-align: center;
+    border-left: 1.5px solid #a8b7c5;
+    border-bottom: 1.5px solid #a8b7c5;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 10px 0;
+}
+
+.estimate-table td:last-child,
+.receive-table td:last-child,
+.bill-table td:last-child{
+    border-right: 1.5px solid #a8b7c5;
+}
+
+.estimate-table tr:last-child td:first-child,
+.receive-table tr:last-child td:first-child,
+.bill-table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+.estimate-table tr:last-child td:last-child,
+.receive-table tr:last-child td:last-child,
+.bill-table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+/* 納品書作成時見積検索テーブル */
+.estimatesearch-table th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #516f8d;
+}
+
+.estimatesearch-table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#abb5bf,#727c82);
+    border-left: 1.5px solid #b2b5b8;
+    border-top: 1.5px solid #b2b5b8;
+    border-bottom: 1.5px solid #b2b5b8;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 10px 0;
+}
+
+.estimatesearch-table td{
+    text-align: center;
+    border-left: 1.5px solid #b2b5b8;
+    border-bottom: 1.5px solid #b2b5b8;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 10px 0;
+}
+
+.estimatesearch-table td:last-child{
+    border-right: 1.5px solid #b2b5b8;
+}
+
+.estimatesearch-table tr:last-child td:first-child{
+    border-radius: 0 0 0 5px;
+}
+
+.estimatesearch-table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+/* 登録テーブル */
+.client-table{
+    width: 85%;
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.product-table{
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.person-table{
+    width: 40%;
+    border-collapse:separate;
+    border-spacing: 0;
+}
+.product-id,.person-id,.person-name{
+    width: 10%;
+}
+.indextable-price{
+    width: 100px;
+}
+
+
+.client-table th:first-child,.product-table th:first-child,.person-table th:first-child{
+    border-radius: 5px 0 0 0;
+}
+
+
+.client-table th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #77818a;
+}
+.product-table th:last-child,
+.person-table th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #77818a;
+}
+
+.client-table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#bdbfc1,#868d94);
+    border-left: 1px solid #77818a;
+    border-top: 1px solid #77818a;
+    border-bottom: 1px solid #77818a;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 10px 0;
+}
+.product-table th,
+.person-table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#bdbfc1,#868d94);
+    border-left: 1px solid #77818a;
+    border-top: 1px solid #77818a;
+    border-bottom: 1px solid #77818a;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 10px 0;
+}
+
+.client-table td{
+    text-align: center;
+    border-left: 1px solid #77818a;
+    border-bottom: 1px solid #77818a;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 10px 0;
+}
+.product-table td,
+.person-table td{
+    text-align: center;
+    border-left: 1px solid #77818a;
+    border-bottom: 1px solid #77818a;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: 10px 0;
+}
+
+.client-table td:last-child{
+    border-right: 1px solid #77818a;
+}
+.product-table td:last-child,
+.person-table td:last-child{
+    border-right: 1px solid #77818a;
+}
+
+.client-table tr:last-child td:first-child,
+.product-table tr:last-child td:first-child,
+.person-table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+.client-table tr:last-child td:last-child,
+.product-table tr:last-child td:last-child,
+.person-table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+.table-btn{
+    width: 7%;
+}
+.table-btn-s{
+    width: 5%;
+}
+
+/* aタグ */
+.new-reg{
+    text-decoration: none;
+}
+.c-black{
+    color: #000;
+}
+.c-white{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* フォーム */
+.my-parts {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+	position: relative;
+	box-shadow: 0 0 0 0.5px rgba(0,0,0,.1);
+	cursor: pointer;
+}
+.my-parts span {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 56%;
+	height: 56%;
+	border-radius: 50%;
+	margin: -.28em 0 0 -.28em;
+	border: .12em solid #4a79f8;
+}
+.my-parts span::after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 50%;
+	left: 50%;
+	width: 72%;
+	height: 36%;
+	background: #4a79f8;
+	margin: .2em 0 0 .14em;
+	transform: rotate(45deg);
+}
+.w-1{
+    width: 100px;
+}
+
+
+/* 書類作成ページ */
+.document-status{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.document{
+    width: 172mm;
+    height: 251mm;
+    margin-left: 70px;
+    border: 0.5px solid #747373;
+}
+.document-inner{
+    margin: 50px;
+}
+
+.document-ttl{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.doc-client-name{
+    font-size: 16px;
+}
+.doc-inf, .doc-inf-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.doc-inf-table{
+    border: none;
+}
+.doc-inf-table td{
+    text-align: end;
+    font-size: 14px;
+    width: 100px;
+}
+.doc-inf-2 div p{
+    font-size: 14px;
+}
+.doc-inf-table-color{
+    color: #fff;
+    background-color: #343333;
+    width: 90px;
+    text-align: center;
+}
+.doc-inf-2-table td{
+    font-size: 14px;
+    padding: 2px;
+}
+.company-inf p{
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}
+.price-sum td:first-child{
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    background-color: #343333;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #343333;
+}
+.price-sum td:nth-child(2){
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #343333;
+}
+
+.table-all{
+    margin-top: 30px;
+}
+.detail-table{
+    width: 100%;
+}
+.detail-table th,
+.detail-table td{
+    border: 0.5px solid #000;
+    height: 25px;
+}
+.detail-table th{
+    color: #fff;
+    background-color: #343333;
+    text-align: center;
+    font-size: 12px;
+}
+
+.detail-table td:first-child{
+    width: 90px;
+    text-align: center;
+}
+.detail-table td:nth-child(3){
+    width: 50px;
+    text-align: end;
+}
+.detail-table td:nth-child(4){
+    width: 40px;
+    text-align: center;
+}
+.detail-table td:nth-child(5){
+    width: 80px;
+    text-align: end;
+}
+.sum-line td:nth-child(2){
+    width: 80px;
+}
+.detail-table td:nth-child(6){
+    width: 100px;
+    text-align: end;
+}
+.sum-line td:nth-child(3){
+    width: 100px;
+}
+
+
+.sum-line-table{
+    width: 100%;
+}
+.sum-line-table td{
+    border: 0.5px solid #000;
+}
+.sum-line{
+    border: 1px solid #000;
+    border-top: 0.5px solid #000;
+}
+
+.estimate-requirement{
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+    border: 0.3px solid #000;
+    border-top: none;
+}
+.estimate-note{
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    border: 0.3px solid #000;
+    border-top: none;
+}
+.bill-note{
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    border: 0.3px solid #000;
+    border-top: none;
+}
+.estimate-requirement p:first-child,
+.estimate-note p:first-child{
+    margin: 0;
+}
+.estimate-requirement p:nth-child(2),
+.estimate-note p:nth-child(2){
+    margin: 0 10px;
+}
+.link-none{
+    text-decoration: none;
+    color: #000;
+}
+
+.h50{
+    height: 50px;
+}
+
+
+/* 見積確定ボタン */
+.bt-atag-color-change{
+    color: #000;
+}
