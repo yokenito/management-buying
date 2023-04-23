@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('delivery_place')->nullable(true);
             $table->string('subject');
             $table->string('delivery_line');
-            $table->string('date_line');
             $table->string('pay_requirement');
             $table->integer('sum_price')->length(15)->default(0);
             $table->foreignId('person_id')->constrained()->cascadeOnDelete();

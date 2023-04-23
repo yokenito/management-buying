@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('receivedetails', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('rceive_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('receive_id')->constrained()->cascadeOnDelete();
             $table->foreignId('product_id')->constrained()->cascadeOnDelete();
             $table->integer('product_count')->length(10)->default(1);
             $table->integer('price')->length(10);

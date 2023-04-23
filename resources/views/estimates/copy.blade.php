@@ -47,7 +47,7 @@
                 <label for="client_id" class="form-label">顧客名<span class="form-note">必須</span></label>
                 <div class="d-flex">
                     <input type="text" name="client_name" class="form-control w-50" id="set-client" value="{{old('client_name',$estimate->client->client_name)}}" readonly>
-                    <input type="hidden" name="client_id" class="form-control w-50" id="set-client-id" value="{{old('client_name',$estimate->client_name)}}" readonly>
+                    <input type="hidden" name="client_id" class="form-control w-50" id="set-client-id" value="{{old('client_id',$estimate->client_name)}}" readonly>
                     <div class="my-parts" data-bs-toggle="modal" data-bs-target="#searchClientModal"><span></span></div>
                 </div>
             </div>

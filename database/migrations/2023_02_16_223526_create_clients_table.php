@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('client_name');
             $table->integer('post_code')->length(10);
             $table->string('client_address');
-            $table->integer('client_phone')->default(0);
+            $table->integer('client_phone')->length(20)->default(0);
             $table->string('delivery_destination')->nullable(true);
             $table->integer('estimate_count')->length(10)->default(0);
             $table->integer('receive_count')->length(10)->default(0);
