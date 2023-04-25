@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
-            $table->integer('bills_id')->length(20)->unique();
+            $table->integer('bill_id')->length(20)->unique();
             $table->foreignId('rceive_id')->constrained()->cascadeOnDelete();
             $table->foreignId('person_id')->constrained()->cascadeOnDelete();
             $table->date('billing_date');

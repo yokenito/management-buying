@@ -24,6 +24,21 @@ main{
     color: #6a6868;
     margin-left: 10px;
 }
+.reg-link-btn-button{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+.reg-link-btn{
+    border: none;
+    background-color: #fff;
+    text-decoration: none;
+    color: #6a6868;
+    padding: 0;
+}
 
 /* トップページ */
 ul {

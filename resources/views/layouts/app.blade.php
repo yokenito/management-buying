@@ -60,7 +60,10 @@
                                 <a href="{{route('clients.index')}}" class="reg-link">顧客</a>
                                 <a href="{{route('products.index')}}" class="reg-link">製品</a>
                                 <a href="{{route('people.index')}}" class="reg-link">担当者</a>
-                                <a href="#" class="reg-link">ログアウト</a>
+                                <form action="{{route('logout')}}" class="reg-link" method="post">
+                                    @csrf
+                                    <button class="reg-link-btn">ログアウト</button>
+                                </form>
                             </nav>
                         @endguest
                     </ul>
