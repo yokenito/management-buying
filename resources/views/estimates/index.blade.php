@@ -6,7 +6,6 @@
 
 @section('content')
     <main>
-        <h2>テスト</h2>
         <button type="button" class="btn btn-outline-primary"><a href="{{route('estimates.create')}}" class="new-reg">新規見積追加</a></button>
 
         <!-- 担当者検索用モーダル -->
